@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --bg-color: #212121;
+    --text-color: #fff;
+    --button-color: #ff66c4;
+    --bgbg-color: #323232;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bgbg-color);
+    color: var(--text-color);
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    margin: 10%;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    box-shadow: var(--button-color) 0px 0px 2rem 1rem;
+    align-items: center;
+    width: 80vw;
+    height: 80vh;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.buttonera {
+    justify-content: space-between;
+    display: flex;
+    width: max-content;
+    gap: 10px;
+    margin: auto;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+}
+
+.gif {
+    width: 30%; /* Ajusta el tamaño según el GIF */
+    margin: auto;
+}
+
+/* Botón de accesibilidad */
+#accessibilityButton {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: black;
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Panel flotante */
+#accessibilityPanel {
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    background: var(--bg-color);
+    padding: 15px;
+    border: 1px solid black;
+    display: none;
+    flex-direction: column;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Botón para cerrar */
+#closePanel {
+    margin-top: 10px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
